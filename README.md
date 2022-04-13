@@ -12,7 +12,7 @@ Jobs:
 
 a. Architecting the data
 
-b. Implementing the UI
+b. Implementing the UI - Emma Schwartz
 
 c. Testing that you can click through the app. (this cannot be done by the learning UI implementer) 
 
@@ -21,7 +21,7 @@ c. Testing that you can click through the app. (this cannot be done by the learn
 
 Jobs:
 
-a. Architecting the data 
+a. Architecting the data - Emily Lo
 
 b. Implementing the UI 
 
