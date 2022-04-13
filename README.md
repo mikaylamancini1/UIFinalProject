@@ -1,5 +1,5 @@
-# UIFinalProject
-How to use a Rubik's cube
+# How to use a Rubik's cube
+UI Final Project
 
 Group 1: Emma Schwartz, add name here
 
