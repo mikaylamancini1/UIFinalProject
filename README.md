@@ -17,6 +17,7 @@ b. Implementing the UI - Emma
 c. Testing that you can click through the app. (this cannot be done by the learning UI implementer) - Emma + Mikayla
 
 
+
 2. Part 2. Quiz portion of the app (including the quiz end page) 
 
 Jobs:
