@@ -1,7 +1,7 @@
 # How to use a Rubik's cube
 UI Final Project
 
-Group 1: Emma Schwartz, Emily Lo, add name here
+Group 1: Emma Schwartz, Emily Lo, Mikayla Mancini, Tanay Murdia
 
 
 Job Assignments:
@@ -10,11 +10,11 @@ Job Assignments:
 
 Jobs: 
 
-a. Architecting the data
+a. Architecting the data - Mikayla
 
-b. Implementing the UI - Emma Schwartz
+b. Implementing the UI - Emma 
 
-c. Testing that you can click through the app. (this cannot be done by the learning UI implementer) 
+c. Testing that you can click through the app. (this cannot be done by the learning UI implementer) - Emma + Mikayla
 
 
 2. Part 2. Quiz portion of the app (including the quiz end page) 
