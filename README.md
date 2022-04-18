@@ -1,4 +1,4 @@
-# How to use a Rubik's cube
+# How to estimate the hight of Columbia buildings
 UI Final Project
 
 Group 1: Emma Schwartz, Emily Lo, Mikayla Mancini, Tanay Murdia
