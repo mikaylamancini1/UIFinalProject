@@ -1,7 +1,17 @@
+from http import client
+from platform import java_ver
+from flask import Flask
+from flask import render_template
+from flask import Response, request, jsonify
+import copy
+app = Flask(__name__)
+
+
+current_id = 10
 quiz = [
     {
-        "id": 1,
-        "question": Pupin hall (office) is approximately 15 stories high, how many meters tall is it?
+        "id": "1",
+        "question": "Pupin hall (office) is approximately 15 stories high, how many meters tall is it?",
         "imglink": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Columbia_University_-_Department_of_Physics_%2848170362276%29.jpg/250px-Columbia_University_-_Department_of_Physics_%2848170362276%29.jpg",
         "op1": "15",
         "op2": "40",
@@ -10,8 +20,8 @@ quiz = [
         "correct": "73"
     },
     {
-        "id": 2,
-        "question": Low Memorial Library (misc) is approximately 4 stories high, hom many meters tall is it?
+        "id": "2",
+        "question": "Low Memorial Library (misc) is approximately 4 stories high, hom many meters tall is it?",
         "imglink": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Low_Memorial_Library_Columbia_University_College_Walk_Court_Yard_05.jpg",
         "op1": "13",
         "op2": "24",
@@ -20,8 +30,8 @@ quiz = [
         "correct": "24"
     },
     {
-        "id": 3,
-        "question": Lerner Hall (misc) is approximately 10 stories high, hom many meters tall is it?
+        "id": "3",
+        "question": "Lerner Hall (misc) is approximately 10 stories high, hom many meters tall is it?",
         "imglink": "https://lernerhall.columbia.edu/files/lerner/content/lerner-night-rev.gif",
         "op1": "15",
         "op2": "46",
@@ -30,8 +40,8 @@ quiz = [
         "correct": "46"
     },
     {
-        "id": 4,
-        "question": Pulitzer hall (office) is approximately 9 stories high, how many meters tall is it?
+        "id": "4",
+        "question": "Pulitzer hall (office) is approximately 9 stories high, how many meters tall is it?",
         "imglink": "https://www.wikicu.com/images/thumb/b/b9/Journalism.jpg/240px-Journalism.jpg",
         "op1": "40",
         "op2": "46",
@@ -40,8 +50,8 @@ quiz = [
         "correct": "49"
     },
     {
-        "id": 5,
-        "question": Fayerweather hall (office) is approximately 10 stories high, how many meters tall is it?
+        "id": "5",
+        "question": "Fayerweather hall (office) is approximately 10 stories high, how many meters tall is it?",
         "imglink": "https://admissionsblog.sipa.columbia.edu/wp-content/uploads/2017/02/tour-fayerweather8.png",
         "op1": "38",
         "op2": "44",
@@ -50,3 +60,33 @@ quiz = [
         "correct": "44"
     }
 ]
+
+
+# ROUTES
+
+
+
+@app.route('/')
+def homepage():
+    return render_template('homepage.html')   
+
+@app.route('/quiz/<id>')
+def quiz_question(id=None):
+    global quiz
+    for q in quiz:
+        print(q)
+        if id==q["id"]:
+            details=q
+    return render_template('quiz.html', detail=details) 
+
+
+ 
+
+
+
+if __name__ == '__main__':
+   app.run(debug = True)
+
+
+
+

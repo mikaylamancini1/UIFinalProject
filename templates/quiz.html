@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script>
+    let details={{detail|tojson}}
+</script>
+<script src="../static/questions.js"></script>
+<div class="Container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="row">
+                <div class="row h3">{{detail.question}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 col-sm-12">
+                    <img class="dimage" src={{detail.imglink}}>
+                </div>
+            </div>       
+        </div>
+        <div class="col-md-12 col-sm-12">
+            <div class="row" id="options"> 
+            </div>
+            <div class="row" id="message"> 
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
