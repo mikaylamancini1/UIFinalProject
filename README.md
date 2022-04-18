@@ -1,4 +1,4 @@
-# How to estimate the hight of Columbia buildings
+# How to estimate the height of Columbia buildings
 UI Final Project
 
 Group 1: Emma Schwartz, Emily Lo, Mikayla Mancini, Tanay Murdia
